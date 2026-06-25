@@ -2214,11 +2214,15 @@ h6,
   }
 
   .community-tabs {
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding-bottom: 8px;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 0 24px;
+    margin-bottom: 24px;
+    border-bottom: none;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .community-tabs::-webkit-scrollbar {
@@ -2226,8 +2230,23 @@ h6,
   }
 
   .comm-tab {
-    white-space: nowrap;
-    flex-shrink: 0;
+    display: none;
+    white-space: normal;
+    text-align: center;
+  }
+  
+  .comm-tab.active {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  .comm-card-title {
+    display: none !important;
   }
 
   .community-title {

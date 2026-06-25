@@ -318,4 +318,38 @@ initNativeCarousel('dev-grid', 'dev-dots', '.dev-card');
       if (tabs[index]) tabs[index].click();
     });
   });
+
+  // add scroll listener to update active tab and dot when swiping
+  let isScrolling;
+  sliderWrap.addEventListener('scroll', () => {
+    window.clearTimeout(isScrolling);
+    isScrolling = setTimeout(() => {
+      let activeIndex = 0;
+      let minDistance = Infinity;
+      const scrollLeft = sliderWrap.scrollLeft;
+      
+      cards.forEach((card, index) => {
+        // card offset relative to sliderTrack
+        const cardLeft = card.offsetLeft - sliderTrack.offsetLeft;
+        const distance = Math.abs(cardLeft - scrollLeft);
+        if (distance < minDistance) {
+          minDistance = distance;
+          activeIndex = index;
+        }
+      });
+
+      // update active tab
+      tabs.forEach((t, i) => {
+        if (i === activeIndex) t.classList.add('active');
+        else t.classList.remove('active');
+      });
+
+      // update active dot
+      dots.forEach((d, i) => {
+        if (i === activeIndex) d.classList.add('active');
+        else d.classList.remove('active');
+      });
+    }, 66); // short debounce
+  }, { passive: true });
+
 })();
