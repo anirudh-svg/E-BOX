@@ -1,0 +1,1000 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Cache Busting Meta Tags -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <title>HBox â€“ Clinical AI That Never Leaves Your Walls | Kompact AI</title>
+  <meta name="description" content="HBox brings full-scale AI inference to hospitals, clinics, and diagnostic centres. Private, fast, on-premise. Run text, speech, vision, and multimodal AI on CPUs you already own." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/css/style.css?v=20" />
+</head>
+<body>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     GLOBAL GLOW (bottom-left)
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<div class="global-glow"></div>
+<div class="page-margins"></div>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     NAVBAR
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+
+    <!-- Logo -->
+    <div class="logo" id="logo" style="display: flex; align-items: center; cursor: pointer;">
+      <img src="public/assets/kompact_logo_light (2).svg" alt="KOMPACT AI" style="height: 36px; width: auto;" />
+    </div>
+
+    <!-- Nav links -->
+    <nav class="nav-links" id="nav-links">
+      <button class="nav-item" id="nav-kai">
+        KAI Platform
+        <svg class="nav-chevron" width="13" height="8" viewBox="0 0 13 8" fill="none">
+          <path d="M1 1L6.5 7L12 1" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="nav-item" id="nav-ai">
+        AI Solutions
+        <svg class="nav-chevron" width="13" height="8" viewBox="0 0 13 8" fill="none">
+          <path d="M1 1L6.5 7L12 1" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="nav-item" id="nav-res">
+        Resources
+        <svg class="nav-chevron" width="13" height="8" viewBox="0 0 13 8" fill="none">
+          <path d="M1 1L6.5 7L12 1" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <button class="nav-item" id="nav-co">
+        Company
+        <svg class="nav-chevron" width="13" height="8" viewBox="0 0 13 8" fill="none">
+          <path d="M1 1L6.5 7L12 1" stroke="rgba(255,255,255,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- CTA -->
+    <a href="#contact" class="btn-primary nav-cta" id="nav-cta">Download Kompact AI</a>
+
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     HERO SECTION
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="hero" id="hero">
+  <!-- dark bg + subtle texture overlay -->
+  <div class="hero-bg"></div>
+
+  <div class="hero-content-wrap">
+    <!-- Top: two columns -->
+    <div class="hero-top">
+      <!-- Left: badge + heading -->
+      <div class="hero-left">
+        <div class="chip chip--dark" id="hero-chip">
+          <span class="chip-dot chip-dot--red"></span>
+          <span>EBOX - AI FOR EDUCATION</span>
+        </div>
+        <h1 class="hero-heading">
+          Bring AI into the<br />
+          classroom. <span class="text-yellow">Not<br />
+          just the curriculum</span>
+        </h1>
+      </div>
+      <!-- Right: description + CTA -->
+      <div class="hero-right">
+        <p class="hero-desc">
+          Kompact AI EBox brings full-scale AI inference to universities,
+          research labs, and schools. Run text, speech, vision, and multimodal
+          AI on the hardware you already own. No cloud dependencies. No IT
+          overhead. No added power draw. On-prem, cloud, workstation, or
+          laptops. Up and running in minutes.
+        </p>
+        <div class="hero-buttons" style="display: flex; gap: 16px;">
+          <a href="#campus" class="btn-primary" id="hero-contact-btn">TRY IT ON CAMPUS</a>
+          <a href="#docs" class="btn-secondary" id="hero-docs-btn" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 36px; padding: 0 16px; border-radius: 4px; border: 1px solid var(--border-mid); color: var(--text-white); font-family: var(--font-mono); font-size: 14px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; line-height: 1; transition: opacity 0.18s, transform 0.18s;">READ DOCS</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero dashboard image -->
+    <div class="hero-image-wrap">
+      <picture>
+        <img
+          src="public/assets/Rectangle 34626498 ebox.png"
+          alt="Clinical AI system dashboard â€” healthcare worker interacting with HBox"
+          class="hero-img"
+          id="hero-img"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     TRUST STRIP
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="trust-strip" id="trust">
+  <div class="trust-inner">
+    <div class="trust-card" id="trust-1">
+      <img src="public/assets/Group 1686552867 ebox.png" alt="" style="width: 32px; height: 32px; flex-shrink: 0;" />
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <p class="trust-title">Students build with AI</p>
+        <p class="trust-desc">Real deployment experience, working with real models on real infrastructure.</p>
+      </div>
+    </div>
+    <div class="trust-card" id="trust-2">
+      <img src="public/assets/Group 1686552868 ebox.png" alt="" style="width: 32px; height: 32px; flex-shrink: 0;" />
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <p class="trust-title">Student and research data stays yours</p>
+        <p class="trust-desc">Every input, output, and interaction log stays within your environment. Complete ownership of your IP, research, and custom projects, no third-party access, ever.</p>
+      </div>
+    </div>
+    <div class="trust-card" id="trust-3">
+      <img src="public/assets/Vector ebox.png" alt="" style="width: 32px; height: 32px; flex-shrink: 0;" />
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <p class="trust-title">Runs on any CPU you already own</p>
+        <p class="trust-desc">Intel, AMD, or ARM, on your laptop, lab workstation, campus server, or cloud instance. No new hardware, no specialised setup.</p>
+      </div>
+    </div>
+    <div class="trust-card" id="trust-4">
+      <img src="public/assets/Group 1686552870 ebox.png" alt="" style="width: 32px; height: 32px; flex-shrink: 0;" />
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <p class="trust-title">Compliant by design</p>
+        <p class="trust-desc">Built to align with FERPA, DPDP, GDPR, and institutional data governance policies. AI that works within your compliance framework, not around it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     WHY SECTION (Problem statement)
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="why-section" id="why">
+  <div class="why-inner">
+    <!-- Heading -->
+    <div class="why-heading-wrap" style="position: relative; z-index: 1;">
+      <img src="public/assets/Ellipse 443.png" alt="" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; pointer-events: none; max-width: 1000px; width: 100%;" />
+      <h2 class="why-heading">
+        Calling an API is not the same as <span class="text-yellow">building with AI</span>
+      </h2>
+    </div>
+
+    <!-- Bullets (3 columns) -->
+    <div class="why-bullets">
+      <div class="why-bullet" id="why-bullet-1">
+        <span class="bullet-star">*</span>
+        <p>
+          Most universities today teach AI by giving students access to cloud APIs. Students send a query, get a response. That's not building with AI. That's using it.
+        </p>
+      </div>
+      <div class="why-bullet" id="why-bullet-2">
+        <span class="bullet-star">*</span>
+        <p>
+          Real AI skills comprise running models, managing deployments, and owning your stack. Most students never get there. Blocked by cloud costs, internet dependencies, and IT dependencies.
+        </p>
+      </div>
+      <div class="why-bullet" id="why-bullet-3">
+        <span class="bullet-star">*</span>
+        <p>
+          EBox puts the actual infrastructure on campus. On hardware you already own. Available to every student, every researcher, from day one. No cloud bill. No data leaving the premises. No waiting on IT.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     PRODUCT OVERVIEW â€” "Start here" videos
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="product-section" id="product">
+  <!-- Section header -->
+  <div class="section-header">
+    <div class="section-header-left">
+      <div class="chip">
+        <span class="chip-dot chip-dot--red"></span>
+        <span>Product overview</span>
+      </div>
+      <h2 class="section-title">Start here</h2>
+      <p class="section-desc">
+        New to EBox? These videos cover the full picture - what EBox is built for, what it can do,<br />
+        and how to put it to work. A good watch before you write a single line of code.
+      </p>
+    </div>
+    <div class="section-header-right" style="justify-content: flex-end; align-items: flex-end;">
+      <div class="carousel-controls" id="video-carousel-controls">
+        <button class="carr-btn carr-btn--dim" id="vid-prev" aria-label="Previous">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="15" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+            <path d="M19 16H11M11 16L15 12M11 16L15 20" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="carr-btn" id="vid-next" aria-label="Next">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="15" stroke="white" stroke-width="1.5"/>
+            <path d="M13 16H21M21 16L17 12M21 16L17 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video cards carousel -->
+  <div class="video-track-wrap">
+    <div class="video-track" id="video-track">
+
+      <article class="vid-card" id="vid-card-1">
+        <img src="public/assets/start here e-box 1.png" alt="What is EBox really about?" class="vid-thumb" />
+        <div class="vid-meta">
+          <p class="vid-title">What is EBox really about?</p>
+          <div class="vid-duration">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="1" stroke="#FB1650" stroke-width="1"/>
+              <path d="M6 5L11 8L6 11Z" fill="#FB1650"/>
+            </svg>
+            <span>05:00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="vid-card" id="vid-card-2">
+        <img src="public/assets/start here ebox 2.png" alt="Features" class="vid-thumb" />
+        <div class="vid-meta">
+          <p class="vid-title">Features</p>
+          <div class="vid-duration">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="1" stroke="#FB1650" stroke-width="1"/>
+              <path d="M6 5L11 8L6 11Z" fill="#FB1650"/>
+            </svg>
+            <span>05:00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="vid-card" id="vid-card-3">
+        <img src="public/assets/start here ebox 3.png" alt="Accessing EBox" class="vid-thumb" />
+        <div class="vid-meta">
+          <p class="vid-title">Accessing EBox</p>
+          <div class="vid-duration">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="1" stroke="#FB1650" stroke-width="1"/>
+              <path d="M6 5L11 8L6 11Z" fill="#FB1650"/>
+            </svg>
+            <span>05:00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="vid-card" id="vid-card-4">
+        <img src="public/assets/start here ebox 4.png" alt="Scaling EBox" class="vid-thumb" />
+        <div class="vid-meta">
+          <p class="vid-title">Scaling EBox</p>
+          <div class="vid-duration">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="1" stroke="#FB1650" stroke-width="1"/>
+              <path d="M6 5L11 8L6 11Z" fill="#FB1650"/>
+            </svg>
+            <span>05:00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="vid-card" id="vid-card-5">
+        <img src="public/assets/Monitoring & Managaing EBox.png" alt="Monitoring and Managing EBox" class="vid-thumb" />
+        <div class="vid-meta">
+          <p class="vid-title">Monitoring and Managing EBox</p>
+          <div class="vid-duration">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="1" stroke="#FB1650" stroke-width="1"/>
+              <path d="M6 5L11 8L6 11Z" fill="#FB1650"/>
+            </svg>
+            <span>05:00</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="vid-card" id="vid-card-6">
+        <img src="public/assets/Multitenancy in EBox.png" alt="Multitenancy in EBox" class="vid-thumb" />
+        <div class="vid-meta">
+          <p class="vid-title">Multitenancy in EBox</p>
+          <div class="vid-duration">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <rect x="2" y="2" width="12" height="12" rx="1" stroke="#FB1650" stroke-width="1"/>
+              <path d="M6 5L11 8L6 11Z" fill="#FB1650"/>
+            </svg>
+            <span>05:00</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  
+  <div class="carousel-dots" id="vid-dots"></div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     CLINICAL USE CASES
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="use-cases" id="use-cases">
+  <!-- Section header -->
+  <div class="section-header">
+    <div class="section-header-left">
+      <div class="chip">
+        <span class="chip-dot chip-dot--red"></span>
+        <span>ACADEMIC USE CASES</span>
+      </div>
+      <h2 class="section-title">
+        AI suitable for <span class="text-yellow">academia.</span>
+      </h2>
+      <p class="section-desc">
+        EBox runs text, speech, vision, and multimodal models, on-premise, on cloud, or on edge, all<br />
+        configurable to your institution's workflows.
+      </p>
+    </div>
+    <div class="section-header-right" style="justify-content: flex-end; align-items: flex-end;">
+      <div class="carousel-controls" id="case-carousel-controls">
+        <button class="carr-btn carr-btn--dim" id="case-prev" aria-label="Previous">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="15" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+            <path d="M19 16H11M11 16L15 12M11 16L15 20" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="carr-btn" id="case-next" aria-label="Next">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="15" stroke="white" stroke-width="1.5"/>
+            <path d="M13 16H21M21 16L17 12M21 16L17 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="use-cases-track-wrap">
+    <div class="use-cases-grid" id="use-cases-grid">
+      <!-- Card 1: Clinical documentation -->
+      <div class="uc-card" id="uc-card-1">
+        <img
+          src="public/assets/academics  ebox 2.png"
+          alt="Clinical documentation â€” physician with patient records"
+          class="uc-img"
+        />
+        <div class="uc-content">
+          <div class="uc-text">
+            <h3 class="uc-title">Hands-on AI development for students</h3>
+            <p class="uc-desc">
+              Move beyond calling APIs. Students run real models, tune inference, manage deployments, and build applications on AI infrastructure all on campus.
+            </p>
+          </div>
+          <p class="uc-example">
+            e.g. A final-year project team deploys a fine-tuned NLP model on the campus server, no cloud account, no per-token cost.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2: Radiology & Imaging -->
+      <div class="uc-card uc-card--plain" id="uc-card-2">
+        <img
+          src="public/assets/academics  ebox 3.png"
+          alt="Radiology and imaging support â€” radiologist reviewing scans"
+          class="uc-img"
+        />
+        <div class="uc-content">
+          <div class="uc-text">
+            <h3 class="uc-title">Research with full data sovereignty</h3>
+            <p class="uc-desc">
+              Sensitive research datasets (medical, behavioural, linguistic) never leave the institution. Run AI on your research data without exposing it to external services or third-party terms of service.
+            </p>
+          </div>
+          <p class="uc-example">
+            e.g. A public health research team processes patient survey data entirely on-premise, in full compliance with institutional review requirements.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: Triage -->
+      <div class="uc-card uc-card--plain" id="uc-card-3">
+        <img src="public/assets/academics  ebox 4.png" alt="Triage and clinical decision support" class="uc-img" />
+        <div class="uc-content">
+          <div class="uc-text">
+            <h3 class="uc-title">Multilingual AI for diverse student communities</h3>
+            <p class="uc-desc">Deploy models that work in the languages students actually speak. EBox supports multilingual inference, making AI tools accessible regardless of language of instruction or regional background.</p>
+          </div>
+          <p class="uc-example">e.g. A university deploys a model supporting student queries in Tamil, Hindi, and English simultaneously.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: Medical record summarisation -->
+      <div class="uc-card uc-card--plain" id="uc-card-4">
+        <img src="public/assets/academics  ebox 5.png" alt="Medical record summarisation" class="uc-img" />
+        <div class="uc-content">
+          <div class="uc-text">
+            <h3 class="uc-title">AI-assisted research and literature review</h3>
+            <p class="uc-desc">Summarise papers, extract findings, analyse datasets, and generate structured research outputs, entirely within the university's secure environment.</p>
+          </div>
+          <p class="uc-example">e.g. PhD researchers summarise 200 papers for a systematic literature review using EBox, with all document data remaining on the university premises.</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Patient communication -->
+      <div class="uc-card uc-card--plain" id="uc-card-5">
+        <img src="public/assets/academics  ebox 6.png" alt="Patient communication" class="uc-img" />
+        <div class="uc-content">
+          <div class="uc-text">
+            <h3 class="uc-title">Campus-wide AI services</h3>
+            <p class="uc-desc">Serve multiple departments, faculties, and student bodies from a single EBox deployment using built-in multi-tenancy, each with isolated access and its own usage visibility.</p>
+          </div>
+          <p class="uc-example">e.g. Engineering, Law, and Medical faculties each access dedicated model instances from one deployment.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  
+  <div class="carousel-dots" id="case-dots"></div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     DEV RESOURCES â€” grid of video thumbnails
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="dev-section" id="dev-resources">
+  <!-- Centered header -->
+  <div class="dev-header">
+    <div class="chip">
+      <span class="chip-dot chip-dot--red"></span>
+      <span>Dev resources</span>
+    </div>
+    <h2 class="dev-title">
+      Everything you need to get <span class="text-yellow">EBox running</span><br />
+      in your academic institute.
+    </h2>
+    <p class="dev-desc">
+      From first install to production deployment, every step is walked through videos.
+    </p>
+  </div>
+
+  <div class="dev-track-wrap">
+    <!-- 4-column grid of resource cards -->
+    <div class="dev-grid" id="dev-grid">
+
+      <div class="dev-card" id="dev-card-1">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 1.png" alt="Installing EBox" />
+        </div>
+        <div class="dev-card-label">Installing EBox</div>
+      </div>
+
+      <div class="dev-card" id="dev-card-2">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 2.png" alt="Monitoring EBox" />
+        </div>
+        <div class="dev-card-label">Monitoring EBox</div>
+      </div>
+
+      <div class="dev-card" id="dev-card-3">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 3.png" alt="Accessing EBox-REST API" />
+        </div>
+        <div class="dev-card-label">Accessing EBox-REST API</div>
+      </div>
+
+      <div class="dev-card" id="dev-card-4">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 4.png" alt="Accessing EBox-SDK Java" />
+        </div>
+        <div class="dev-card-label">Accessing EBox-SDK Java</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="dev-card" id="dev-card-5">
+        <div class="dev-card-img">
+          <img src="public/assets/Frame 2147230548 (3).png" alt="Accessing EBox-SDK C#" />
+        </div>
+        <div class="dev-card-label">Accessing EBox-SDK C#</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="dev-card" id="dev-card-6">
+        <div class="dev-card-img">
+          <img src="public/assets/Frame 2147230548 (4).png" alt="Accessing EBox-SDK Python" />
+        </div>
+        <div class="dev-card-label">Accessing EBox-SDK Python</div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="dev-card" id="dev-card-7">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 7.png" alt="Loading Multiple Models in a single System: NUMA Nodes" />
+        </div>
+        <div class="dev-card-label">Loading Multiple Models in a single System: NUMA Nodes</div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="dev-card" id="dev-card-8">
+        <div class="dev-card-img">
+          <img src="public/assets/Frame 2147230548 (6).png" alt="MCP using EBox" />
+        </div>
+        <div class="dev-card-label">MCP using EBox</div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="dev-card" id="dev-card-9">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 9.png" alt="EBox Multitenancy" />
+        </div>
+        <div class="dev-card-label">EBox Multitenancy</div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="dev-card" id="dev-card-10">
+        <div class="dev-card-img">
+          <img src="public/assets/dev resource ebox 10.png" alt="EBox Scale" />
+        </div>
+        <div class="dev-card-label">EBox Scale</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="carousel-controls" id="dev-carousel-controls" style="margin-top: 40px; width: 100%; display: flex; justify-content: center;">
+    <button class="carr-btn carr-btn--dim" id="dev-prev" aria-label="Previous">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="15" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+        <path d="M19 16H11M11 16L15 12M11 16L15 20" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="carr-btn" id="dev-next" aria-label="Next">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="15" stroke="white" stroke-width="1.5"/>
+        <path d="M13 16H21M21 16L17 12M21 16L17 20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+  <div class="carousel-dots" id="dev-dots"></div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     CAPABILITIES SECTION
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="capabilities-section" id="capabilities">
+  <div class="capabilities-inner">
+    <!-- Header -->
+    <div class="section-header" style="margin-bottom: 60px; align-items: center;">
+      <div class="section-header-left">
+        <div class="chip">
+          <span class="chip-dot chip-dot--red"></span>
+          <span>PLATFORM CAPABILITIES</span>
+        </div>
+        <h2 class="section-title">Built for <span class="text-yellow">academic<br/>environments.</span></h2>
+      </div>
+      <div class="section-header-right" style="justify-content: flex-end; align-items: flex-end;">
+        <p class="section-desc" style="max-width: 460px; text-align: left; color: rgba(255, 255, 255, 0.60); font-size: 16px; font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 24px; word-wrap: break-word;">
+          EBox is tailored and configured for academia. Every capability carries the same privacy and performance guarantees.
+        </p>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="cap-grid">
+      <!-- Row 1 -->
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="8" y="8" width="16" height="16" rx="2" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <rect x="13" y="13" width="6" height="6" stroke="#FFCE1B" stroke-width="1.2"/>
+            <path d="M12 8V4M20 8V4M12 28V24M20 28V24M4 12H8M4 20H8M28 12H24M28 20H24" stroke="#FFCE1B" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Runs on hardware you<br/>already own</h3>
+        <p class="cap-desc">Works on Intel AMX, AVX-512, ARM SVE, and AMD processors. No specialised hardware. NUMA-aware for multi-socket systems.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="8" y="14" width="16" height="14" rx="2" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <path d="M11 14V10C11 7.23858 13.2386 5 16 5V5C18.7614 5 21 7.23858 21 10V14" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <circle cx="16" cy="21" r="2" stroke="#FFCE1B" stroke-width="1.2"/>
+            <path d="M16 23V25" stroke="#FFCE1B" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">No cloud dependency, no<br/>ongoing API costs</h3>
+        <p class="cap-desc">Traditional AI teaching relies on cloud APIs that cost money every time a student runs a query. EBox eliminates these dependencies. No metered billing, no internet dependency.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M11 22 A 5.5 5.5 0 0 1 10.5 11 A 6 6 0 0 1 21.5 11 A 5.5 5.5 0 0 1 21 22 A 4 4 0 0 1 16 21 A 4 4 0 0 1 11 22 Z" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 11V28M16 16L22 13M16 20L10 17" stroke="#FFCE1B" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Student privacy by<br/>default</h3>
+        <p class="cap-desc">Student queries, submissions, and interaction logs stay within the institution. EBox never sends student data to Kompact AI or any external service.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M16 4L26 8V16C26 22 16 28 16 28C16 28 6 22 6 16V8L16 4Z" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <path d="M16 11V21M11 16H21" stroke="#FFCE1B" stroke-width="1.2"/>
+            <path d="M12.5 12.5L19.5 19.5M12.5 19.5L19.5 12.5" stroke="#FFCE1B" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Multilingual inference</h3>
+        <p class="cap-desc" style="margin-top: 24px;">Deploy AI in multiple languages to serve diverse student populations. Select from models that support regional and international languages - no additional configuration required.</p>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M9 22C6.23858 22 4 19.7614 4 17C4 14.5057 5.82479 12.4371 8.21731 12.0592C8.7562 8.65089 11.6961 6 15.25 6C18.8471 6 21.8152 8.70425 22.316 12.1818C25.0456 12.6517 27 15.0294 27 17.875C27 20.7041 24.7067 23 21.875 23" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M15 26V15M15 15L11 19M15 15L19 19" stroke="#FFCE1B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Multi-tenancy across<br/>departments and faculties</h3>
+        <p class="cap-desc">Serve engineering, science, humanities, and administration from a single deployment with built-in JWT-based access isolation. Each faculty gets its own access and usage visibility.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="6" y="10" width="20" height="4" rx="1" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <rect x="6" y="18" width="20" height="4" rx="1" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <circle cx="10" cy="12" r="1" fill="#FFCE1B"/>
+            <circle cx="10" cy="20" r="1" fill="#FFCE1B"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">No IT dependency</h3>
+        <p class="cap-desc">Real-time AI responses for triage, imaging, and live clinical workflows.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="13" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <circle cx="16" cy="16" r="7" stroke="#FFCE1B" stroke-width="1.2"/>
+            <path d="M16 3V9M16 23V29M3 16H9M23 16H29" stroke="#FFCE1B" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M6.8 6.8L11 11M25.2 6.8L21 11M6.8 25.2L11 21M25.2 25.2L21 21" stroke="rgba(255,255,255,0.6)" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">OpenAI-compatible APIs</h3>
+        <p class="cap-desc">Students and developers build using the same API patterns used in industry. OpenAI-compatible REST APIs and SDKs in Java, C#, Python, JavaScript, TypeScript, Kotlin, C++, and Rust.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="cap-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M8 8V24M16 12V28M24 6V22" stroke="rgba(255,255,255,0.6)" stroke-width="1.2"/>
+            <circle cx="8" cy="14" r="2" stroke="#FFCE1B" stroke-width="1.2"/>
+            <circle cx="16" cy="18" r="2" stroke="#FFCE1B" stroke-width="1.2"/>
+            <circle cx="24" cy="12" r="2" stroke="#FFCE1B" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">No additional power draw</h3>
+        <p class="cap-desc">No new load on the grid, no new energy budget required.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     COMMUNITY & ECOSYSTEM SECTION
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="community-section" id="community">
+  <div class="community-inner">
+    <div class="community-header">
+      <div class="chip">
+        <span class="chip-dot chip-dot--red"></span>
+        <span>COMMUNITY &amp; ECOSYSTEM</span>
+      </div>
+      <h2 class="community-title">
+        Built to grow with the<br/>
+        <span class="text-yellow">academic community.</span>
+      </h2>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="community-tabs">
+      <button class="comm-tab active">IIT GUWAHATI x KOMPACT AI</button>
+      <button class="comm-tab">KAI DEV MEET</button>
+      <button class="comm-tab">KOMPACT AI HACKATHON</button>
+      <button class="comm-tab">KAI TALKS</button>
+      <button class="comm-tab">PARTNER PROGRAMME</button>
+    </div>
+
+    <!-- Slider Area -->
+    <div class="community-slider-wrap">
+      <div class="community-slider">
+        <!-- Slide 1 -->
+        <div class="comm-slide">
+          <div class="comm-card">
+            <div class="comm-card-content">
+              <h3 class="comm-card-title">IIT GUWAHATI x KOMPACT AI</h3>
+              <p class="comm-card-desc">Free AI course co-developed with IIT Guwahati and Ziroh Labs, rooted in the mission of AI for ALL. Course content is free to the public. Formal certification available for ₹1,200. Launching August 2026.</p>
+            </div>
+            <div class="comm-card-img-wrap">
+              <img src="public/assets/Rectangle 34626481 e-sbox.png" alt="IIT Guwahati x Kompact AI" class="comm-card-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="comm-slide">
+          <div class="comm-card">
+            <div class="comm-card-content">
+              <h3 class="comm-card-title">KAI DEV MEET</h3>
+              <p class="comm-card-desc">Monthly hybrid forum for 15 founders and developers. Each session deconstructs a real-world AI use case with a guest practitioner. Starts August 2026.</p>
+            </div>
+            <div class="comm-card-img-wrap">
+              <img src="public/assets/dev meet.png" alt="KAI DEV MEET" class="comm-card-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="comm-slide">
+          <div class="comm-card">
+            <div class="comm-card-content">
+              <h3 class="comm-card-title">KOMPACT AI HACKATHON</h3>
+              <p class="comm-card-desc">A quarterly hackathon series spanning 500+ institutions and every premier engineering college in India. Designed to bridge the gap between academic theory and real-world AI practice. First edition: July 2026.</p>
+            </div>
+            <div class="comm-card-img-wrap">
+              <img src="public/assets/hackathon ebox.png" alt="KOMPACT AI HACKATHON" class="comm-card-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="comm-slide">
+          <div class="comm-card">
+            <div class="comm-card-content">
+              <h3 class="comm-card-title">KAI TALKS</h3>
+              <p class="comm-card-desc">Monthly virtual seminar series exploring the mathematics and science behind LLMs. Expert-led deep dives for the research-driven community. Debuts September 2026.</p>
+            </div>
+            <div class="comm-card-img-wrap">
+              <img src="public/assets/KAI TALKS EBOX.png" alt="KAI TALKS" class="comm-card-img" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="comm-slide">
+          <div class="comm-card">
+            <div class="comm-card-content">
+              <h3 class="comm-card-title">PARTNER PROGRAMME</h3>
+              <p class="comm-card-desc">Open to Hardware OEMs, LLM OEMs, Device OEMs, System Integrations and ISVs. Build on, bundle, and extend SBox.</p>
+            </div>
+            <div class="comm-card-img-wrap">
+              <img src="public/assets/aprtner ebox.png" alt="PARTNER PROGRAMME" class="comm-card-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile dots -->
+    <div class="carousel-dots" id="comm-dots" style="margin-top: 24px; display: none;">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     FAQ SECTION
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="faq-section" id="faqs">
+  <div class="faq-inner">
+    <!-- Centered header -->
+    <div class="faq-header">
+      <div class="chip">
+        <span class="chip-dot chip-dot--red"></span>
+        <span>FAQs</span>
+      </div>
+      <h2 class="faq-title">Common <span class="text-yellow">questions.</span></h2>
+    </div>
+
+    <!-- Accordion -->
+    <div class="faq-list" id="faq-list">
+
+      <div class="faq-item faq-item--open" id="faq-1">
+        <button class="faq-question" aria-expanded="true">
+          <span>How is EBox different from just giving students API access to an LLM?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 15L12 9L18 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>API access teaches students to use AI as a service. EBox teaches them to run, manage, and build with AI infrastructure. Students interact with real deployment environments, understand inference at a systems level, and build applications that work the same way in enterprise settings. Skills that translate directly to the industry.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-2">
+        <button class="faq-question" aria-expanded="false">
+          <span>Does our institution need to buy new servers?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>No. EBox runs on Intel AMX, AVX-512, ARM SVX, and AMD processors â€” hardware already in most university server rooms. It is compatible with Ubuntu, Red Hat, CentOS, Fedora, and Suse. No new hardware, no new power infrastructure required.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-3">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do we protect student and research data?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>EBox runs entirely within your campus network. All inputs, model outputs, and logs stay inside your environment regardless of the underlying hardware or OS. Kompact AI never receives or stores any student or research data.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-4">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can we serve multiple departments from one deployment?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. EBox supports multi-tenancy through built-in JWT tokens. Engineering, Medical, Law, and any other faculty can each access isolated model instances from a single campus deployment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-5">
+        <button class="faq-question" aria-expanded="false">
+          <span>Does it work in regional languages?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. EBox includes multilingual models supporting regional and international languages. Institutions can deploy AI tools in the language their students understand.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-6">
+        <button class="faq-question" aria-expanded="false">
+          <span>What does it cost to run?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>We offer free licenses to academic. EBox runs on existing CPU infrastructure with no additional power draw and no per-query cloud billing.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" id="faq-7">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do we need a dedicated IT team to manage it?</span>
+          <svg class="faq-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 9L12 15L18 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer">
+          <p>No. EBox is designed for minimal IT overhead. It can be deployed from GitHub, managed remotely via CLI-SSH, and for workstations and laptops.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     GET STARTED â€” CTA SECTION
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<section class="get-started-section" id="contact">
+  <div class="get-started-glow"></div>
+  <div class="get-started-inner">
+    <div class="chip">
+      <span class="chip-dot chip-dot--red"></span>
+      <span>Get Started</span>
+    </div>
+    <h2 class="get-started-title">
+      The AI you need, on the <span class="text-yellow">hardware</span> you have.
+    </h2>
+    <p class="get-started-sub">Get in touch to see EBox running on your infrastructure.</p>
+    <a href="mailto:hello@kompact.ai" class="btn-primary btn-lg" id="cta-contact-btn">Contact Us</a>
+  </div>
+</section>
+
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+     FOOTER â€” Figma design
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+
+    <!-- Top nav row: links + socials -->
+    <div class="footer-nav-row">
+      <div class="footer-nav-links">
+        <a href="#" class="footer-nav-link footer-nav-link--active">Models</a>
+        <a href="#" class="footer-nav-link">Press</a>
+        <a href="#faqs" class="footer-nav-link">FAQs</a>
+      </div>
+      <div class="footer-socials">
+        <!-- LinkedIn -->
+        <a href="#" aria-label="LinkedIn" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="4" cy="4" r="2" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" aria-label="WhatsApp" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.031 2C6.495 2 2 6.494 2 12.032c0 1.767.461 3.492 1.339 5.01L2.003 22l5.086-1.332A9.972 9.972 0 0 0 12.031 22c5.535 0 10.03-4.496 10.03-10.032S17.566 2 12.031 2zm5.441 12.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          </svg>
+        </a>
+        <!-- Discord -->
+        <a href="#" aria-label="Discord" class="social-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.993a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom section: Big K logo + addresses + ZIROHLabs -->
+    <div class="footer-bottom-row">
+      <!-- Big yellow K logo -->
+      <div class="footer-big-logo">
+        <img src="public/assets/Image H-Box/k_logo_new.jpg" alt="K" class="big-k-square" style="object-fit: cover; background: none;" />
+      </div>
+
+      <!-- Office addresses -->
+      <div class="footer-addresses">
+        <div class="footer-address">
+          <p class="footer-city">Bengaluru</p>
+          <p class="footer-addr-text">21st GoodWorks Infinity, Electronic City Phase 1,<br />Bengaluru, 560100</p>
+        </div>
+        <div class="footer-address" style="margin-left: auto;">
+          <p class="footer-city">Palo Alto</p>
+          <p class="footer-addr-text">335 Bryant Street,<br />Palo Alto, CA 94301</p>
+        </div>
+      </div>
+
+      <!-- ZIROHLabs logo -->
+      <div class="footer-ziroh">
+        <img src="public/assets/Image H-Box/ziroh_new.png" alt="ZIROHLabs" class="ziroh-logo" style="height: 36px; filter: none;" />
+      </div>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer-legal">
+      <p class="footer-copyright">Â© 2026 . All Rights Reserved</p>
+      <div class="footer-legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Services</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<script src="src/js/script.js?v=8"></script>
+</body>
+</html>
